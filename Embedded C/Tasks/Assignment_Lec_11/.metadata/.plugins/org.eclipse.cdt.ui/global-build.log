@@ -1,0 +1,375 @@
+13:39:50 **** Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+c:/users/user/desktop/iti/imt_sdk_win_32/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [DIO_Test.elf] Error 1
+13:40:38 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c:10: warning: return type of 'main' is not 'int'
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+Finished building target: DIO_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Test.elf  >"DIO_Test.lss"
+Finished building: DIO_Test.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     142 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:41:15 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+Finished building target: DIO_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Test.elf  >"DIO_Test.lss"
+Finished building: DIO_Test.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     146 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:48:35 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+Finished building target: DIO_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Test.elf  >"DIO_Test.lss"
+Finished building: DIO_Test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_Test.elf  "DIO_Test.hex"
+Finished building: DIO_Test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     146 bytes (0.4% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:49:15 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/users/user/desktop/iti/imt_sdk_win_32/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+Finished building target: DIO_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Test.elf  >"DIO_Test.lss"
+Finished building: DIO_Test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_Test.elf  "DIO_Test.hex"
+Finished building: DIO_Test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3492 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:23:21 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/users/user/desktop/iti/imt_sdk_win_32/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+Finished building target: DIO_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Test.elf  >"DIO_Test.lss"
+Finished building: DIO_Test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_Test.elf  "DIO_Test.hex"
+Finished building: DIO_Test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:31:18 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/users/user/desktop/iti/imt_sdk_win_32/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+Finished building target: DIO_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Test.elf  >"DIO_Test.lss"
+Finished building: DIO_Test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_Test.elf  "DIO_Test.hex"
+Finished building: DIO_Test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:31:41 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/users/user/desktop/iti/imt_sdk_win_32/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+Finished building target: DIO_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Test.elf  >"DIO_Test.lss"
+Finished building: DIO_Test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_Test.elf  "DIO_Test.hex"
+Finished building: DIO_Test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:32:41 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/users/user/desktop/iti/imt_sdk_win_32/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: DIO_Test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,DIO_Test.map -mmcu=atmega32 -o "DIO_Test.elf"  ./main.o   
+Finished building target: DIO_Test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S DIO_Test.elf  >"DIO_Test.lss"
+Finished building: DIO_Test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex DIO_Test.elf  "DIO_Test.hex"
+Finished building: DIO_Test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:32:44 **** Build of configuration Debug for project Shift_Right ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/users/user/desktop/iti/imt_sdk_win_32/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: Shift_Right.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Shift_Right.map -mmcu=atmega32 -o "Shift_Right.elf"  ./main.o   
+Finished building target: Shift_Right.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Shift_Right.elf  >"Shift_Right.lss"
+Finished building: Shift_Right.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Shift_Right.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:33:31 **** Incremental Build of configuration Debug for project DIO_Test ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 DIO_Test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:33:31 **** Incremental Build of configuration Debug for project Shift_Right ****
+make all 
+Building target: Shift_Right.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Shift_Right.map -mmcu=atmega32 -o "Shift_Right.elf"  ./main.o   
+Finished building target: Shift_Right.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Shift_Right.elf  >"Shift_Right.lss"
+Finished building: Shift_Right.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Shift_Right.elf  "Shift_Right.hex"
+Finished building: Shift_Right.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Shift_Right.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

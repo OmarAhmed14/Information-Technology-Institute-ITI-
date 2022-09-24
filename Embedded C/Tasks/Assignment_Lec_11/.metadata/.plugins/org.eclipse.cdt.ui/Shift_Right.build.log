@@ -1,0 +1,33 @@
+16:33:31 **** Incremental Build of configuration Debug for project Shift_Right ****
+make all 
+Building target: Shift_Right.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Shift_Right.map -mmcu=atmega32 -o "Shift_Right.elf"  ./main.o   
+Finished building target: Shift_Right.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Shift_Right.elf  >"Shift_Right.lss"
+Finished building: Shift_Right.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Shift_Right.elf  "Shift_Right.hex"
+Finished building: Shift_Right.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Shift_Right.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3300 bytes (10.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+16:33:32 Build Finished (took 780ms)
+
