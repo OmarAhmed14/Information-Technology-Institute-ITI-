@@ -1,1 +1,2 @@
-# Infornation-Technology-Institute-ITI-
+# Information-Technology-Institute-ITI-
+
